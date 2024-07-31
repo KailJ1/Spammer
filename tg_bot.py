@@ -182,7 +182,7 @@ def save_messages_sent(user_id, count):
 
 def get_message_limit(subscription_type):
     if subscription_type == "Admin":
-        return float('inf')  # Используем бесконечность для Админа
+        return 10000
     elif subscription_type == "Pro":
         return 100
     elif subscription_type == "Free":
